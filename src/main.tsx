@@ -7,9 +7,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 // Importa las páginas que se renderizarán en las rutas
 import Navbar from './Components/NavBar';  // Asegúrate de importar el Navbar 
 import PIndex from './pages/PIndex';
-import Experiencia from './pages/experiencia';
+import Experiencia from './pages/Experiencia';
 import MyWork from './pages/MyWork';
-import Contactame from './pages/contactame';
+import Contactame from './pages/Contactame';
 
 
 createRoot(document.getElementById('root')!).render(
