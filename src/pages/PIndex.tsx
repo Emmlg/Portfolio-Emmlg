@@ -4,6 +4,8 @@ import TitleAndDescription from '../Components/TitleAndDescription';
 import DownloadButton from '../Components/DownloadButton';
 import ListWithTitle from '../Components/ListWithTitle';
 import profileImage from '../assets/emmlg.jpg';
+import DownloadCV from '../assets/Curriculum CV JavaDev_Emmlg.pdf';
+
 
 const PIndex: React.FC = () => {
   return (
@@ -31,7 +33,7 @@ const PIndex: React.FC = () => {
             />
             <DownloadButton
               title="Descargar CV"
-              filePath="/media/Curriculum CV JavaDev_Emmlg.pdf"
+              filePath={DownloadCV}
             />
             <div className="row">
               <ListWithTitle
