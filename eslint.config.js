@@ -11,4 +11,9 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  {
+    rules: {
+      "react/react-in-jsx-scope": "off", // Desactiva la regla que requiere React en el alcance
+    },
+  },
 ];
