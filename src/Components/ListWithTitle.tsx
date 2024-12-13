@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface ListWithTitleProps {
@@ -8,20 +7,17 @@ interface ListWithTitleProps {
 
 const ListWithTitle: React.FC<ListWithTitleProps> = ({ title, list }) => {
   return (
-    <div className="row mb-4">
-      <div className="col-md-6">
-        <h2>{title}</h2>
-        <ul className="list-group">
-          {list.map((item, index) => (
-            <li key={index} className="list-group-item">
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div className="col-md-6 mb-4"> {/* Aquí se define como columna */}
+      <h2>{title}</h2>
+      <ul className="list-group">
+        {list.map((item, index) => (
+          <li key={index} className="list-group-item">
+            {item}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
 
 export default ListWithTitle;
-
